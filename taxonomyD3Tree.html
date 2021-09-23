@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"><title>my webpage</title>
+    <!-- Load d3 source -->
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="TreeChart.js"></script>
+    <!-- Style -->
+    <style>
+    .circle { fill: rgb(248, 228, 115); }
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1px;
+    }
+    .text {
+        font-family: "Arial", Gadget, sans-serif;
+        fill: rgb(3, 3, 3);
+        font-size: 12px;
+    }
+    </style>
+</head>
+<body onload="treeChart()">
+    <!-- svg canvas -->
+    <svg width="1200" height="1200">
+        <g transform="translate(40, 10)">
+            <g class="links"></g>
+            <g class ="nodes"></g>
+        </g>
+    </svg>
+</body>
+</html>
